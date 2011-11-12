@@ -1,0 +1,21 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+
+  * Como consumidor quero expor meus desejos de consumo para receber ofertas de empresas interessadas no negócio.
+    - Poderei cadastrar novos desejos
+    - Poderei excluir desejos
+  * Como empresa de varejo quero fazer uma proposta de negócio, apenas aos consumidores que fizeram o desejo que me interessou,
+    para conseguir fechar vendas.
+    - Poderei ver uma lista de desejos ordenados pelos mais desejados
+    - Poderei ver o detalhamento de um desejo com uma separação de faixas de valores solicitado para aquele desejo
+    - Poderei fazer uma oferta com o valor que mais me interessar, somente aos consumidores que o valor do desejo é compatível com minha proposta
+    - O consumidor poderá acessar meu site para que ele possa realizar o seu desejo
+  * Como administrador do site quero visualizar quantas propostas de negócio foram enviadas aos consumidores
+    para cobrar uma taxa por consumidor atingido.
+    - Poderei visualizar quantas propostas cada empresa de varejo enviou e o consolidado mensal.
+  * Como administrador do site quero visualizar quantas propostas de negócio, das enviadas  aos consumidores, levaram consumidores ao site da
+    empresa varejista que fez a oferta para que eu possa cobrar por indicação aceita.
+    - Poderei visualizar quantas propostas o consumidor acessou de cada empresa de varejo enviou e o consolidado mensal.
+  * Como empresa varejista quero saber quanto terei que pagar no final do mês para organizar minhas despesas.
+    - Poderei ver o quanto o cartolla irá me cobrar no fim do mês.

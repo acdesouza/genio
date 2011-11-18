@@ -11,6 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'sqlite3'
 
 group :development do
   gem 'heroku'
@@ -19,7 +20,6 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
   gem 'minitest'
   # Pretty printed test output
   # gem 'turn', :require => false # Don't work with autotest

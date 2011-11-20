@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails'#, '3.1.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -11,7 +11,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'sqlite3'
 
 group :development do
   gem 'heroku'
@@ -27,4 +26,9 @@ group :test do
   gem 'autotest-rails'
   gem 'autotest-fsevent'
   gem 'autotest-growl' # MacOSX only
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end

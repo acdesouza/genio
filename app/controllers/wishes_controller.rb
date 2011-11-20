@@ -1,8 +1,8 @@
-class WishController < ApplicationController
+class WishesController < ApplicationController
   def make
   end
 
-  def show
+  def list
   end
 
 end

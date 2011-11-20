@@ -3,6 +3,7 @@ class WishesController < ApplicationController
   end
 
   def list
+    @wishes = Wish.find :all
   end
 
 end

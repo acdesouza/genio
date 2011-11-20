@@ -6,9 +6,10 @@ class WishesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get show" do
+  test "should get list" do
     get :list
     assert_response :success
+    assert_not_nil assigns(:wishes)
   end
 
 end

@@ -1,2 +1,18 @@
-<h1>Wish#show</h1>
-<p>Find me in app/views/wish/show.html.erb</p>
+<%= action_title 'Nossos desejos' %>
+<h1>Nossos desejos</h1>
+<table id="wishes">
+  <header>
+  <tr>
+    <th>Desejo</th>
+    <th>Price</th>
+  </tr>
+  </header>
+  <body>
+  <% @wishes.each do |wish| %>
+    <tr>
+      <td class="item"><%= wish.item %></td>
+      <td class="price"><%= wish.price %></td>
+    </tr>
+  <% end %>
+  </body>
+</table>

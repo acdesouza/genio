@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails'
+gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -12,13 +13,10 @@ end
 
 gem 'jquery-rails'
 
-group :development do
-  gem 'heroku'
+
+group :development, :test do
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-end
-
-group :test do
   gem 'minitest'
   # Pretty printed test output
   # gem 'turn', :require => false # Don't work with autotest

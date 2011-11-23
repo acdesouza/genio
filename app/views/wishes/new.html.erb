@@ -1,0 +1,9 @@
+<%= action_title 'Faça um desejo' %>
+<fieldset>
+  <legend>Seu desejo</legend>
+  <%= form_for @wish do |f| %>
+    <%= f.text_field :item %>
+    <%= f.text_field :price %>
+    <%= f.submit 'Realize meu desejo!' %>
+  <% end %>
+</fieldset>

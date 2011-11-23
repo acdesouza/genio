@@ -1,4 +1,4 @@
 Cartolla::Application.routes.draw do
-  get "wishes/list"
-  root :to => 'wishes#make'
+  resources :wishes
+  root :to => 'wishes#index'
 end

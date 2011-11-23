@@ -1,18 +1,18 @@
 <%= action_title 'Nossos desejos' %>
-<h1>Nossos desejos</h1>
+<%= link_to 'Faça um desejo', new_wish_path %>
 <table id="wishes">
-  <header>
+  <thead>
   <tr>
     <th>Desejo</th>
     <th>Price</th>
   </tr>
-  </header>
-  <body>
+  </thead>
+  <tbody>
   <% @wishes.each do |wish| %>
     <tr>
       <td class="item"><%= wish.item %></td>
       <td class="price"><%= wish.price %></td>
     </tr>
   <% end %>
-  </body>
+  </tbody>
 </table>

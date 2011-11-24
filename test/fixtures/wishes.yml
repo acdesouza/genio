@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-televisao:
+televisao_1:
   item: Samsung LCD 55" FullHD
   price: 1000
 
-blueray:
+televisao_2:
+  item: Samsung LCD 55" FullHD
+  price: 1100
+
+bluray:
   item: Samsung BluRay Player
   price: 300

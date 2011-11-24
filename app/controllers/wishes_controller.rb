@@ -13,7 +13,7 @@ class WishesController < ApplicationController
   end
 
   def index
-    @wishes = Wish.find :all
+    @wishes = Wish.count(:all, group: 'item', order: 'count_all DESC, item ASC')
   end
 
 end

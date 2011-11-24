@@ -8,10 +8,10 @@
   </tr>
   </thead>
   <tbody>
-  <% @wishes.each do |wish| %>
+  <% @wishes.each do |wish,counted_wishes| %>
     <tr>
-      <td class="item"><%= wish.item %></td>
-      <td class="price"><%= wish.price %></td>
+      <td class="wish"><%= wish %></td>
+      <td class="total"><%= counted_wishes %></td>
     </tr>
   <% end %>
   </tbody>

@@ -28,8 +28,8 @@ class WishesControllerTest < ActionController::TestCase
       assert_select 'tbody' do
         assert_select 'tr', 2
         assert_select 'tr' do |trs|
-          assert_select trs[0], 'td.item', 'Samsung LCD 55&quot; FullHD'
-          assert_select trs[0], 'td.price', '1000'
+          assert_select trs[0], 'td.wish', 'Samsung LCD 55&quot; FullHD'
+          assert_select trs[0], 'td.total', '2'
         end
       end
     end

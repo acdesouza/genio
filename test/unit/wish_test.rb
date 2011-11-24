@@ -21,4 +21,12 @@ class WishTest < ActiveSupport::TestCase
 
     refute wish.valid?
   end
+
+  test 'should group and count wishes' do
+    counted_wishes = Wish.grouped
+    assert_not_nil counted_wishes
+    assert_equal counted_wishes.keys, ['Samsung LCD 55" FullHD', 'Samsung BluRay Player']
+    assert_equal counted_wishes['Samsung LCD 55" FullHD'], 2
+    assert_equal counted_wishes['Samsung BluRay Player'], 1
+  end
 end

@@ -2,3 +2,6 @@
 log/
 tmp/
 .sass-cache/
+db/development.sqlite3
+db/schema.rb
+db/test.sqlite3

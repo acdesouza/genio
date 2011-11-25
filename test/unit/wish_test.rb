@@ -34,4 +34,9 @@ class WishTest < ActiveSupport::TestCase
     assert_equal  8, Wish.price_interval_range('XBox 360')
     assert_equal 80, Wish.price_interval_range('PS3')
   end
+
+  test 'should calculate top price of each of 5 intervals.' do
+    assert_equal [ 118,  126,  134,  142,  150], Wish.find_prices_interval_for_wish('XBox 360')
+    assert_equal [1180, 1260, 1340, 1420, 1500], Wish.find_prices_interval_for_wish('PS3')
+  end
 end

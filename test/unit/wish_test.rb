@@ -25,8 +25,13 @@ class WishTest < ActiveSupport::TestCase
   test 'should group and count wishes' do
     counted_wishes = Wish.grouped
     assert_not_nil counted_wishes
-    assert_equal counted_wishes.keys, ['Samsung LCD 55" FullHD', 'Samsung BluRay Player']
+    assert_equal counted_wishes.keys, ["PS3", "XBox 360", "Samsung LCD 55\" FullHD", "Samsung BluRay Player"]
     assert_equal counted_wishes['Samsung LCD 55" FullHD'], 2
     assert_equal counted_wishes['Samsung BluRay Player'], 1
+  end
+
+  test 'should calculate price intervals\' range, for a given wish.' do
+    assert_equal  8, Wish.price_interval_range('XBox 360')
+    assert_equal 80, Wish.price_interval_range('PS3')
   end
 end

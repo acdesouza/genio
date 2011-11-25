@@ -13,17 +13,16 @@ end
 
 gem 'jquery-rails'
 
-
 group :development, :test do
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+  # To use debugger
+  # gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'minitest'
   # Pretty printed test output
   # gem 'turn', :require => false # Don't work with autotest
   gem 'ZenTest'
   gem 'autotest-rails'
-  gem 'autotest-fsevent'
-  gem 'autotest-growl' # MacOSX only
+  # gem 'autotest-fsevent'
+  # gem 'autotest-growl' # MacOSX only
   gem 'sqlite3'
 end
 

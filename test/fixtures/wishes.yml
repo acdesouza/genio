@@ -11,3 +11,43 @@ televisao_2:
 bluray:
   item: Samsung BluRay Player
   price: 300
+
+xbox_01:
+  item: XBox 360
+  price: 110
+
+xbox_02:
+  item: XBox 360
+  price: 120
+
+xbox_03:
+  item: XBox 360
+  price: 130
+
+xbox_04:
+  item: XBox 360
+  price: 140
+
+xbox_05:
+  item: XBox 360
+  price: 150
+
+ps3_01:
+  item: PS3
+  price: 1100
+
+ps3_02:
+  item: PS3
+  price: 1200
+
+ps3_03:
+  item: PS3
+  price: 1300
+
+ps3_04:
+  item: PS3
+  price: 1400
+
+ps3_05:
+  item: PS3
+  price: 1500

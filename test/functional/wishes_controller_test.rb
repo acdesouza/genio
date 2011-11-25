@@ -26,10 +26,10 @@ class WishesControllerTest < ActionController::TestCase
       end
 
       assert_select 'tbody' do
-        assert_select 'tr', 2
+        assert_select 'tr', 4
         assert_select 'tr' do |trs|
-          assert_select trs[0], 'td.wish', 'Samsung LCD 55&quot; FullHD'
-          assert_select trs[0], 'td.total', '2'
+          assert_select trs[0], 'td.wish', 'PS3'
+          assert_select trs[0], 'td.total', '5'
         end
       end
     end
@@ -46,5 +46,9 @@ class WishesControllerTest < ActionController::TestCase
   test 'should ask for a wish' do
     get :new
     assert_select 'title', 'Cartolla | Faça um desejo'
+  end
+
+  test 'should show wishes distributed by price\'s class intervals' do
+    flunk('Começando pelo model....')
   end
 end

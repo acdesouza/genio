@@ -1,5 +1,5 @@
 class WishesGroup
-  attr_reader :wish_description
+  attr_reader :wish_description, :intervals
 
   def initialize(wish_description)
     @wish_description = wish_description
@@ -11,6 +11,14 @@ class WishesGroup
 
   def intervals
     @intervals ||= find_prices_interval
+    @intervals
+  end
+
+  def frequencies
+    intervals.collect do |interval|
+      (Wish.count(:all, group: 'item', conditions: "item = '#{@wish_description}' AND #{interval - interval_range} <= price AND price <= #{interval}",
+                  order: 'count_all DESC, item ASC'))[@wish_description]
+    end
   end
 
 
@@ -24,6 +32,10 @@ class WishesGroup
     end
 
     return prices_interval
+  end
+
+  def interval_range
+    price_interval_range(@wish_description)
   end
 
   def price_interval_range(wish_description)

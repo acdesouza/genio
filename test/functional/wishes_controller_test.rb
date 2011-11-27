@@ -49,6 +49,9 @@ class WishesControllerTest < ActionController::TestCase
   end
 
   test 'should show wishes distributed by price\'s class intervals' do
-    flunk('Começando pelo model....')
+    wish_description = 'PS3'
+    get :show, id: wish_description
+    assert_response :success
+    assert_select 'title', "Cartolla | Desejos com a descrição: #{wish_description}"
   end
 end

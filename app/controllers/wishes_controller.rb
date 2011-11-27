@@ -16,4 +16,8 @@ class WishesController < ApplicationController
     @wishes = Wish.grouped
   end
 
+  def show
+    @wish_description = params[:id]
+    @wishes_group = WishesGroup.new @wish_description
+  end
 end

@@ -22,14 +22,14 @@ class WishesControllerTest < ActionController::TestCase
     get :index
     assert_select 'table#wishes' do
       assert_select 'thead' do
-        assert_select 'th', 2
+        assert_select 'th', 3
       end
 
       assert_select 'tbody' do
-        assert_select 'tr', 2
+        assert_select 'tr', 4
         assert_select 'tr' do |trs|
-          assert_select trs[0], 'td.wish', 'Samsung LCD 55&quot; FullHD'
-          assert_select trs[0], 'td.total', '2'
+          assert_select trs[0], 'td.wish', 'PS3'
+          assert_select trs[0], 'td.total', '15'
         end
       end
     end
@@ -46,5 +46,25 @@ class WishesControllerTest < ActionController::TestCase
   test 'should ask for a wish' do
     get :new
     assert_select 'title', 'Cartolla | Faça um desejo'
+  end
+
+  test 'should show wishes distributed by price\'s class intervals' do
+    wish_description = 'PS3'
+    get :show, id: wish_description
+    assert_response :success
+    assert_select 'title', "Cartolla | Desejos com a descrição: #{wish_description}"
+
+    assert_select 'table#wishes' do
+      assert_select 'thead' do
+        assert_select 'th' do |ths|
+          assert_select ths[0], 'th', 'Intervalos de valores'
+          assert_select ths[1], 'th', '1180'
+          assert_select ths[2], 'th', '1260'
+          assert_select ths[3], 'th', '1340'
+          assert_select ths[4], 'th', '1420'
+          assert_select ths[5], 'th', '1500'
+        end
+      end
+    end
   end
 end

@@ -5,6 +5,7 @@
   <tr>
     <th>Descrição</th>
     <th>Total</th>
+    <th>Enviar oferta</th>
   </tr>
   </thead>
   <tbody>
@@ -12,6 +13,7 @@
     <tr>
       <td class="wish"><%= wish %></td>
       <td class="total"><%= counted_wishes %></td>
+      <td class="btnOferta"><%= link_to 'Detalhes', wish_path(wish) %></td>
     </tr>
   <% end %>
   </tbody>

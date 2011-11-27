@@ -1,1 +1,16 @@
 <%= action_title "Desejos com a descrição: #{@wish_description}" %>
+<%= link_to 'Voltar a lista de desejos', wishes_path %>
+<table id="wishes">
+  <thead>
+    <tr>
+      <th colspan="5">Intervalos de valores</th>
+    </tr>
+    <tr>
+      <th><%= @wishes_group.intervals[0] %></th>
+      <th><%= @wishes_group.intervals[1] %></th>
+      <th><%= @wishes_group.intervals[2] %></th>
+      <th><%= @wishes_group.intervals[3] %></th>
+      <th><%= @wishes_group.intervals[4] %></th>
+    </tr>
+  </thead>
+</table>

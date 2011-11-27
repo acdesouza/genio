@@ -35,18 +35,48 @@ xbox_05:
 ps3_01:
   item: PS3
   price: 1100
+ps3_01_1:
+  item: PS3
+  price: 1099
+ps3_01_2:
+  item: PS3
+  price: 1098
+ps3_01_3:
+  item: PS3
+  price: 1097
+ps3_01_4:
+  item: PS3
+  price: 1096
 
 ps3_02:
   item: PS3
   price: 1200
+ps3_02_1:
+  item: PS3
+  price: 1199
+ps3_02_2:
+  item: PS3
+  price: 1198
+ps3_02_3:
+  item: PS3
+  price: 1197
 
 ps3_03:
   item: PS3
   price: 1300
+ps3_03_1:
+  item: PS3
+  price: 1299
+ps3_03_2:
+  item: PS3
+  price: 1298
 
 ps3_04:
   item: PS3
   price: 1400
+ps3_04_1:
+  item: PS3
+  price: 1399
 
 ps3_05:
   item: PS3

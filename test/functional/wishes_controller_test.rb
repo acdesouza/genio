@@ -54,7 +54,7 @@ class WishesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select 'title', "Cartolla | Desejos com a descrição: #{wish_description}"
 
-    assert_select 'table#wishes' do
+    assert_select 'table#wishes' do |table|
       assert_select 'thead' do
         assert_select 'th' do |ths|
           assert_select ths[0], 'th', 'Intervalos de valores'
@@ -63,6 +63,16 @@ class WishesControllerTest < ActionController::TestCase
           assert_select ths[3], 'th', '1340'
           assert_select ths[4], 'th', '1420'
           assert_select ths[5], 'th', '1500'
+        end
+      end
+
+      assert_select 'tbody' do
+        assert_select 'td' do |tds|
+          assert_select tds[0], 'td', '5'
+          assert_select tds[1], 'td', '4'
+          assert_select tds[2], 'td', '3'
+          assert_select tds[3], 'td', '2'
+          assert_select tds[4], 'td', '1'
         end
       end
     end

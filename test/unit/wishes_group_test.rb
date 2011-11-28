@@ -13,4 +13,12 @@ class WishesGroupTest < ActiveSupport::TestCase
     wishes_group_ps3 = WishesGroup.new 'PS3'
     assert_equal [1180, 1260, 1340, 1420, 1500], wishes_group_ps3.intervals
   end
+
+  test 'should count frequencies in each price\'s interval' do
+    wishes_group_xbox = WishesGroup.new 'XBox 360'
+    assert_equal [1, 1, 1, 1, 1], wishes_group_xbox.frequencies
+
+    wishes_group_xbox = WishesGroup.new 'PS3'
+    assert_equal [5, 4, 3, 2, 1], wishes_group_xbox.frequencies
+  end
 end

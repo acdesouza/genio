@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= stylesheet_link_tag "application" %>
     <title><%= content_for :page_title %></title>
   </head>
   <body>
+    <div id="telaTopo">
+      <div id="topo">
+        <div id="info">
+          <ul>
+            <li class="cartolla"><a href="#">Cartolla</a></li>
+            <li class="contato"><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div id="marca"><a href="#" title="Cartolla" alt="marca cartolla"><%= image_tag "/images/marca-cartolla.png", border: "0" %></a></div>
+        <div id="usuario">
+          <ul>
+            <li class="cadastro"><a href="#">Cadastro</a></li>
+            <li class="lista"><a href="#">Minha lista de desejos</a></li>
+            <li class="login"><a href="#">Login</a></li>
+          </ul>
+        </div>
+        <div id="banner"><%= image_tag "/images/banner-cartolla.png", width: "794", height: "175" %></div>
+      </div>
+    </div>
+    <div id="telaConteudo">
+      <div id="conteudo">
 
-    <%= yield %>
+        <%= yield %>
 
+      </div>
+    </div>
+    <div id="telaRodape">
+      <div id="rodape">
+        <p>Copyright ©2011 Cartolla</p>
+        <div id="midias">
+          <ul>
+            <li><a href="#"><%= image_tag "/images/icn-twitter.png"  %></a></li>
+            <li><a href="#"><%= image_tag "/images/icn-facebook.png" %></a></li>
+            <li><a href="#"><%= image_tag "/images/icn-gPlus.png"    %></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

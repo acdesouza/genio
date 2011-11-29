@@ -3,5 +3,38 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
+ *= require_tree .
 */
+*{margin: 0;padding: 0;	list-style: none;	border:0;	text-decoration: none; font-family:Verdana, Geneva, sans-serif; color:#4f4f4f; font-weight:100;}
+input, label, img {vertical-align: middle;}
+h1, h2, h3, h4, h5, h6 {line-height:100%;vertical-align: top;}
+body{ background:url(../images/bg-body.png) top left repeat-x #747378;}
+#telaTopo, #telaConteudo, #telaRodape{width:100%; padding:auto;}
+#topo, #conteudo, #rodape{ width:920px; margin:auto; padding:0 20px;}
+
+#telaTopo{ background:url(../images/bg_topo-m.jpg) top center no-repeat;}
+
+#topo{ height:274px;}
+#info{float:left; height:auto; width:80px; padding:0 0 10px; font-size:13px;}
+#info li {padding:5px 0 0px 20px;}
+#info li.cartolla{ background:url(../images/icn-cartolla.png) left center no-repeat; }
+#info li.contato{ background:url(../images/icn-carta.png) left center no-repeat; padding:5px 0 7px 20px;}
+#info li a{padding:0px;}
+#marca{float:left; padding:5px 0 0 268px; }
+#usuario{float:right; width:180px; height:auto; font-size:13px; text-align:right; padding:0 0 5px;}
+#usuario li{padding:5px 25px 0 0;}
+#usuario li.cadastro{ background:url(../images/icn-prancheta.png) right center no-repeat;}
+#usuario li.lista{ background:url(../images/icn-pasta.png) right center no-repeat;}
+#usuario li.login{ background:url(../images/icn-cadeado.png) right center no-repeat;}
+
+#banner{width:830px; height:175px; float:left; padding:0 0 0 75px;}
+#telaConteudo{ background:#e8e8e6;}
+#conteudo{ height:342px;}
+
+
+
+#telaRodape{}
+#rodape{ height:30px; padding:5px 0 5px 0; }
+#rodape p{float:left; padding:5px 0 0 0; color:#FFF;}
+#midias{float:right; width:auto; padding:0; height:30px;}
+#midias li{float:right; padding:0 5px 0;}

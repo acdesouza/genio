@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css"  />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<title>Cartolla</title>
+<script>
+
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+
+function leech(v){
+    v=v.replace(/o/gi,"0")
+    v=v.replace(/i/gi,"1")
+    v=v.replace(/z/gi,"2")
+    v=v.replace(/e/gi,"3")
+    v=v.replace(/a/gi,"4")
+    v=v.replace(/s/gi,"5")
+    v=v.replace(/t/gi,"7")
+    return v
+}
+
+function soNumeros(v){
+    return v.replace(/\D/g,"")
+}
+
+function data(v){
+    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
+//Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d{4})(\d)/,"$1/$2")    //Coloca hífen entre o quarto e o quinto dígitos
+	v=v.replace(/(\d{2})(\d)/,"$1/$2")
+	
+    return v
+}
+
+function valor(v){
+	
+    v=v.replace(/\D/g,"")                    //Remove tudo o que não é dígito
+	v=v.replace(/(\d{4})(\d)/,"$1,$2")
+    v=v.replace(/(\d{1})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
+           //Coloca um ponto entre o terceiro e o quarto dígitos
+	
+    return v
+}
+
+function site(v){
+    //Esse sem comentarios para que você entenda sozinho ;-)
+    v=v.replace(/^http:\/\/?/,"")
+    dominio=v
+    caminho=""
+    if(v.indexOf("/")>-1)
+        dominio=v.split("/")[0]
+        caminho=v.replace(/[^\/]*/,"")
+    dominio=dominio.replace(/[^\w\.\+-:@]/g,"")
+    caminho=caminho.replace(/[^\w\d\+-@:\?&=%\(\)\.]/g,"")
+    caminho=caminho.replace(/([\?&])=/,"$1")
+    if(caminho!="")dominio=dominio.replace(/\.+$/,"")
+    v="http://"+dominio+caminho
+    return v
+}
+</script>
+</head>
+<body>
+<div id="telaTopo">
+	<div id="topo">
+   		<div id="info">
+        	<ul>
+            	<li class="contato"><a href="#">Contato</a></li>                
+            </ul>
+        </div>
+   		<div id="marca"><a href="#" title="Cartolla" alt="marca cartolla"><img src="images/marca-cartolla.png" border="0" /></a></div>
+   		<div id="menu">
+       	  <ul>
+            	<li class="atual"><a href="#" title="" alt="" >Estoque de Pedidos</a></li>
+                <li class="ofertas"><a href="#" title="" alt="" >Minhas Ofertas</a></li>
+            	<li><a href="#" title="" alt="" >Preferências</a></li>     
+            	<li><a href="#">Minhas Faturas</a></li>
+                  
+        	</ul>
+        </div>
+  </div>
+</div>
+<div id="telaConteudo">
+	<div id="conteudo">
+        <div id="boxInferior" class="confirmacao">
+        	<div id="boxInfEsq" class="ofertando">
+            	<h1>Você está fazendo uma oferta para: TV LCD - FULL HD - 32''</h1>
+                
+                <ul>
+                	<li class="graficoUmB">RS 700-799</li>
+                    <li class="graficoDoisB">RS 800-899</li>
+                    <li class="graficoTresB">R$ 900-999</li>
+                    <li class="graficoQuatro">R$ 1.000-1.999</li>
+                </ul>
+                <p>Bloco de demanda já ofertado</p>
+            </div>
+            <div id="boxInfDir" class="ofertando">
+            <a href="ofertando.html" class="voltar">Voltar</a>
+                   <ul>
+                
+                    <li><p>Coloque o preço da oferta:</p>
+                      <label for="ivalor">
+        <input id="ivalor" onkeypress="mascara(this,valor)" value="1.000,00"  size="7" maxlength="8" readonly="readonly"/></label></li>
+                     
+                    <li> <p>Data de validade da oferta:</p><label for="idata">
+        <input id="idata" onkeypress="mascara(this,data)" value="11/05/2012" size="9" maxlength="10" readonly="readonly" /></label></li>	
+        			<li class="und"><p>Limite de unidade:</p>  <label for="iund">
+        <input id="iund" value="100" size="5" maxlength="5" readonly="readonly" /></label></li>
+                    <li class="site"><p>URL da oferta:</p><label for="isite">
+        <input id="isite" onkeyup="mascara(this,site)" value="http://cartolla.com.br" size="19" maxlength="30" readonly="readonly" /></label></li>
+                </ul>
+                <a href="#" class="salvar">Salvar 
+Parametros</a>
+            
+            </div>
+            <div id="confirmacao">
+            <p>Você está fazendo uma oferta de TV LCD - FULL HD - 32'' a R$1.000,00 cada <br />Potencial máximo de faturamento : R$0,00. Potencial máximo de FEE:R$0,00 + R$ 1.000,00</p>
+            <a href="#" class="confirmacao">Estou ciente e confirmo minha oferta</a>
+            </div>
+                  
+        </div>
+        <div id="clear"></div>
+	</div>
+</div>
+<div id="telaRodape">
+	<div id="rodape">
+    	<p>Copyright ©2011 Cartolla</p>
+       
+    </div>
+</div>
+
+</body>
+</html>

@@ -30,7 +30,10 @@ body{ background:url(../images/bg-body.png) top left repeat-x #747378;}
 #banner{width:830px; height:175px; float:left; padding:0 0 0 75px;}
 #telaConteudo{ background:#e8e8e6;}
 #conteudo{ height:342px;}
-
+input.btEnviar{ background:url(../images/bg_bt_enviar.png) top center no-repeat; width:105px; height:41px;
+  padding:10px 20px 10px 0px; color:#FFF;
+  font-size:19px;
+}
 
 
 #telaRodape{}

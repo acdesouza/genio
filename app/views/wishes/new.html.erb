@@ -3,7 +3,7 @@
   <legend>Seu desejo</legend>
   <%= form_for @wish do |f| %>
     <%= f.text_field :item %>
-    <%= f.text_field :price %>
-    <%= f.submit 'Realize meu desejo!' %>
+    <%= f.text_field :price, class: 'btPreco' %>
+    <%= f.submit 'Enviar', class: 'btEnviar' %>
   <% end %>
 </fieldset>

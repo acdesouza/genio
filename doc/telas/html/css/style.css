@@ -1,0 +1,193 @@
+*{margin: 0;padding: 0;	list-style: none;	border:0;	text-decoration: none; font-family:Verdana, Geneva, sans-serif; color:#4f4f4f; font-weight:100;}
+input, label, img {vertical-align: middle;}
+h1, h2, h3, h4, h5, h6 {line-height:100%;vertical-align: top;}
+body{ background:url(../images/bg-body.png) top left repeat-x #747378;}
+#telaTopo, #telaConteudo, #telaRodape{width:100%; padding:auto;}
+#topo, #conteudo, #rodape{ width:920px; margin:auto; padding:0 20px;}
+
+#telaTopo{ background:url(../images/bg_topo-m.jpg) top center no-repeat;}
+
+#topo{ height:274px;}
+#info{float:left; height:auto; width:80px; padding:0 0 10px; font-size:13px;}
+#info li {padding:5px 0 0px 20px;}
+#info li.cartolla{ background:url(../images/icn-cartolla.png) left center no-repeat; }
+#info li.contato{ background:url(../images/icn-carta.png) left center no-repeat; padding:5px 0 7px 20px;}
+#info li a{padding:0px;}
+#marca{float:left; padding:5px 0 0 268px; }
+#usuario{float:right; width:180px; height:auto; font-size:13px; text-align:right; padding:0 0 5px;}
+#usuario li{padding:5px 25px 0 0;}
+#usuario li.cadastro{ background:url(../images/icn-prancheta.png) right center no-repeat;}
+#usuario li.lista{ background:url(../images/icn-pasta.png) right center no-repeat;}
+#usuario li.login{ background:url(../images/icn-cadeado.png) right center no-repeat;}
+
+#banner{width:830px; height:175px; float:left; padding:0 0 0 75px;}
+#telaConteudo{ background:#e8e8e6;}
+#conteudo{ height:342px;}
+#menu{ height:340px;float:left; display:inline-block; float:left; z-index:1000; width:915px; }
+#menu ul{display:block; display:inline;}
+#menu ul li{
+	float:left;
+	background:none;
+	width:196px;
+	height:41px;
+	position:relative;
+	margin-top:18px;
+}
+
+#menu li.caracteristica, #menu li.produto, #menu li.categoria, #menu li.desativado {background:url(../images/bg_menu.png) top center no-repeat;}
+#menu ul li a{ padding:10px 20px 10px 10px; float:left; color:#FFF;}
+
+#menu li.btPreco{ background:url(../images/bg_menu-bt-preco.png) top left no-repeat; width:216px;}
+
+#menu li.btEnviar{  background:url(../images/bg_bt_enviar.png) top center no-repeat; width:105px; height:41px;}
+#menu li:hover{background:url(../images/bg_menu_hover.png) top center no-repeat; width:196px; height:41px;}
+
+#menu li:hover.btPreco{background:url(../images/bg_menu-bt-preco.png) top left no-repeat; width:216px;}
+input#nome {background:none; float:left; padding:0; font-size:20px; margin:7px 0 0 138px; color:#FFF;}
+
+#menu li:hover.btEnviar{ background:url(../images/bg_bt_enviar.png) top center no-repeat; width:105px; height:41px;}
+
+#menu li ul{
+	position:absolute;
+	width:523px;
+	height:298px;
+	left:-10px;
+	top:0px;
+}
+#menu li:hover ul{display:block;}
+#menu li ul li{display:block;}
+        /* main submenu */
+        #menu #main { left:0px; top:0px; padding-top:20px; background-color:#7cb7e3; color:#fff; z-index:999;}
+		#menu ul li ul.main {visibility:hidden;}
+		#menu ul li:hover ul.main {background:url(../images/fundo.png) top center no-repeat; width:522px; height:263px; visibility:visible; top:41px;}
+		
+		#menu ul li:hover ul.main li{ background:none;}
+		
+		#menu ul li:hover ul.main p a{float:left; padding:60px 0 0 68px;}
+		
+		#menu ul li:hover ul.main #lista ul{width:225px; top:31px;; left:48px; font-size:13px; height:auto;}
+		#menu ul li:hover ul.main #lista li{float:left; width:200px; height:20px; background:none; border-bottom:1px solid #FFF;  padding:2px 0 8px; margin-top:0;}
+		#menu ul li:hover ul.main #lista li a{padding:0;  background:url(../images/icn-audio-e-video.png) left center no-repeat;  padding:5px 0 3px 25px;}
+		#menu ul li:hover ul.main #lista li a:hover{color:#45193c; background:url(../images/icn-audio-e-video-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li.atual a{padding:0;  color:#45193c; background:url(../images/icn-audio-e-video-hover.png) left center no-repeat;  padding:5px 0 3px 25px;}
+
+
+		#menu ul li:hover ul.main #lista li a.cel{background:url(../images/icn-celulares.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.cel{color:#45193c;background:url(../images/icn-celulares-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a.eleDom{background:url(../images/icn-eletrodomestico.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.eleDom{color:#45193c;background:url(../images/icn-eletrodomestico-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a.info{background:url(../images/icn-info.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.info{color:#45193c;background:url(../images/icn-info-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a.elet{background:url(../images/icn-eletronicos.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.elet{color:#45193c;background:url(../images/icn-eletronicos-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a.game{background:url(../images/icn-game.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.game{color:#45193c;background:url(../images/icn-game-hover.png) left center no-repeat;}
+		
+		
+		#menu ul li:hover ul.main #lista ul.listaDir{width:250px; left:280px; height:auto;}
+		#menu ul li:hover ul.main #lista li a.car{background:url(../images/icn-carro.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.car{color:#45193c;background:url(../images/icn-carro-hover.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a.ass{background:url(../images/icn-assRevista.png) left center no-repeat;}
+		#menu ul li:hover ul.main #lista li a:hover.ass{color:#45193c;background:url(../images/icn-assRevista-hover.png) left center no-repeat;}
+		#lista p{float:left; margin:230px 0 0 120px; font-size:10px; color:#fff;}
+		
+		/* main submenu - produtos */
+		#menu ul li ul.prod {
+	visibility:hidden;
+}
+		#menu ul li:hover ul.prod {background:url(../images/fundo-dois.png) top center no-repeat; width:363px; height:267px; visibility:visible;}
+		
+		#menu ul li:hover ul.prod li{ background:none;}
+		#menu li ul.prod{
+	position:absolute;
+	width:363px;
+	height:267px;
+	left:-81px;
+	top:41px;
+}		
+#menu ul li:hover ul.prod #lista h1{font-size:18px; margin:30px 0 0 50px; color:#FFF;}
+#menu ul li:hover ul.prod #lista ul{width:225px; top:55px;; left:70px; font-size:12px; height:auto;}
+#menu ul li:hover ul.prod #lista li, #menu ul li:hover ul.prod #lista li a {float:left; width:200px; height:20px; background:none; border-bottom:1px solid #FFF;  padding:1px 0 2px; margin-top:0;}
+
+#menu ul li:hover ul.prod #lista li a{border:none;padding:0; width:130px; z-index:999;}
+
+
+
+#menu ul li:hover ul.prod #lista li.tituloProd {padding:0;  background:url(../images/icn-audio-e-video.png) left center no-repeat;  padding:8px 0 5px 25px; font-size:16px;}
+#menu ul li:hover ul.prod #lista li{padding-left:20px; color:#FFF; background:none;}
+#menu ul li:hover ul.prod #lista li label{color:#fff;}
+#menu ul li:hover ul.prod #lista li.atual label{color:#45193c;}
+	
+#menu ul li:hover ul.prod #lista p{float:left; margin:190px 0 0 50px; font-size:10px; color:#fff;}	
+
+/* submenu - desativado */
+#menu li.desativado:hover{background:url(../images/bg_menu_hover_b.png) top center no-repeat;}
+
+/* submenu - caracteristicas */
+
+		#menu ul li ul.caract {
+	visibility:hidden;
+}
+		#menu ul li:hover ul.caract {background:url(../images/fundo-tres.png) top center no-repeat; width:522px; height:281px; visibility:visible;}
+		
+		#menu ul li:hover ul.caract li{ background:none;}
+		#menu li ul.caract{
+	position:absolute;
+	width:522px;
+	height:281px;
+	left:-170px;
+	top:41px;
+}
+#menu ul li:hover ul.caract #lista h1{font-size:20px; margin:30px 0 0 40px; color:#FFF;}
+#menu ul li:hover ul.caract #lista ul{width:80px; top:61px;; left:30px; font-size:13px; height:auto;}
+#menu ul li:hover ul.caract #lista li, #menu ul li:hover ul.caract #lista li a {float:left; width:110px; height:20px; background:none; border-bottom:1px solid #FFF;  padding:1px 0 3px; margin-top:0;}
+
+#menu ul li:hover ul.caract #lista li a{border:none;padding:0; width:auto;}
+ 
+
+#menu ul li:hover ul.caract #lista li.tituloProd {padding:0;  padding:8px 0 5px 5px; font-size:16px;}
+#menu ul li:hover ul.caract #lista li{padding-left:5px; color:#FFF;}
+#menu ul li:hover ul.caract #lista li label{color:#fff;}
+#menu ul li:hover ul.caract #lista li.atual label{color:#45193c;}
+
+#menu ul li:hover ul.caract #lista ul.listaDir{width:80px; left:175px;height:auto;}
+#menu ul li:hover ul.caract #lista ul.listaDir li{background:none;}
+#menu ul li:hover ul.caract #lista ul.listaDirDois{width:150px; left:325px; height:auto; background:none;}
+#menu ul li:hover ul.caract #lista ul.listaDirDois li{width:150px; background:none;}
+;}
+#menu ul li:hover ul.caract #lista ul.listaDirDois li.tituloCara {padding:0;  padding:8px 0 5px 5px; font-size:16px; width:150px; background:none;}	
+	
+#menu ul li:hover ul.caract #lista p{float:left; margin:205px 0 0 80px; font-size:10px; color:#fff;}	
+#menu ul li:hover ul.caract #lista p a{float:right; width:62px; height:22px; background:url(../images/bg-bt-confirmar.png) top left no-repeat; padding:3px 0 0 8px; margin-left:10px; margin-top:-4px;}
+
+
+
+
+        /* search */
+        .searchContainer div { background-color:#fff; display:inline; padding:5px;}
+        .searchContainer input[type="text"] {border:none;}
+        .searchContainer img { vertical-align:middle;}
+        /* corners*/
+        #menu .corner_inset_left { position:absolute; top:0px; left:-12px;}
+        #menu .corner_inset_right { position:absolute; top:0px; left:150px;}
+        #menu .last { background:transparent none repeat scroll 0% 0%; margin:0px; padding:0px; border:none; position:relative; border:none; height:0px;}
+        #menu .corner_left { position:absolute; left:0px; top:0px;}
+        #menu .corner_right { position:absolute; left:132px; top:0px;}
+        #menu .middle { position:absolute; left:18px; height: 20px; width: 115px; top:0px;}
+		
+
+/* #menu ul { padding:0px; margin:0px; display:block; display:inline;}
+        #menu li ul { position:absolute; left:-10px; top:0px; margin-top:45px; width:150px; line-height:16px; background-color:#172322; color:#0395CC; for IE display:none; }
+        #menu li:hover ul { display:block; background:url(../images/fundo.png) top center no-repeat; }
+        #menu li ul li{ display:block; margin:5px 20px; padding: 5px 0px;  border-top: dotted 1px #606060; list-style-type:none; }
+        #menu li ul li:first-child { border-top: none; }
+        #menu li ul li a { display:block; color:#0395CC; }
+        #menu li ul li a:hover { color:#7FCDFE; }*/ 
+
+#boxTeste{height:50px; background:#666; float:left; width:400px;}
+#boxTeste ul li a{float:left;}
+#telaRodape{}
+#rodape{ height:30px; padding:5px 0 5px 0; }
+#rodape p{float:left; padding:5px 0 0 0; color:#FFF;}
+#midias{float:right; width:auto; padding:0; height:30px;}
+#midias li{float:right; padding:0 5px 0;}

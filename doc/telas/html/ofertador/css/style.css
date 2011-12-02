@@ -1,0 +1,125 @@
+*{margin: 0;padding: 0;	list-style: none;	border:0;	text-decoration: none; font-family:Verdana, Geneva, sans-serif; color:#4f4f4f; font-weight:100;}
+input, label, img {vertical-align: middle;}
+h1, h2, h3, h4, h5, h6 {line-height:100%;vertical-align: top;}
+body{ background:url(../images/bg-body.png) top left repeat-x #747378;	}
+#telaTopo, #telaConteudo, #telaRodape{width:100%; padding:auto;}
+#topo, #conteudo, #rodape{ width:920px; margin:auto; padding:0 20px;}
+
+#telaTopo{ background:url(../images/bg_topo.jpg) top center no-repeat;}
+
+#topo{ height:151px;}
+#info{float:left; height:auto; width:80px; padding:0 0 10px; font-size:13px;}
+#info li {padding:5px 0 0px 20px;}
+#info li.cartolla{ background:url(../images/icn-cartolla.png) left center no-repeat; }
+#info li.contato{ background:url(../images/icn-carta.png) left center no-repeat; padding:5px 0 7px 20px;}
+#info li a{padding:0px;}
+#marca{float:left; padding:15px 0 0 265px; }
+#usuario{float:right; width:180px; height:100px; font-size:13px; text-align:right;}
+#usuario li{padding:5px 25px 0 0;}
+#usuario li.cadastro{ background:url(../images/icn-prancheta.png) right center no-repeat;}
+#usuario li.lista{ background:url(../images/icn-pasta.png) right center no-repeat;}
+#usuario li.login{ background:url(../images/icn-cadeado.png) right center no-repeat;}
+
+
+#telaConteudo{ background:#e8e8e6;}
+#conteudo{ height:390px; padding-bottom:10px;}
+#clear{ clear:both;}
+
+/*------------------------------menu-ofertador------------------------*/ 
+#menu{ height:40px;float:left; width:916px; float:left; padding-top:27px;}
+#menu li{float:left; background:url(../images/bg-menu.png) top center no-repeat; width:225px; padding:0 4px 0 0;}
+#menu li:hover{background:url(../images/bg-menu-atual.png) top center no-repeat;}
+#menu li.atual{background:url(../images/bg-menu-atual.png) top center no-repeat;}
+#menu li a{color:#FFF; padding:8px 10px 15px 65px; float:left; font-size:14px;}
+#menu li.atual a {padding:8px 0 15px 40px;}
+#menu li.ofertas a{padding:8px 40px 15px 50px; margin-left:10px;}
+
+
+/*------------------------------menu-produtos------------------------*/ 
+
+#menuDois{ background:url(../images/bg-menuDois.png) center center no-repeat; height:82px; width:916px; padding-top:10px;}
+#menuDois h1{font-size:15px; padding:8px 0 0 55px; font-weight:bold;}
+#menuDois ul{padding:10px 0 0 60px;}
+#menuDois li {float:left; padding:3px 2px 3px 0;}
+#menuDois li a {padding:5px 4px; font-size:12px;}
+#menuDois li a:hover{background:#45193c; color:#FFF;}
+#menuDois li.atual a{background:#45193c; color:#FFF;}
+
+/*------------------------------pagina de login------------------------*/ 		
+#login{background:url(../images/bg_login.png) top center no-repeat; width:444px; height:310px; margin:0 auto;}		
+#login h1{font-size:16px; padding:15px 0 0 110px; float:left; color:#FFF;}
+#login ul li{float:left; margin:25px 0 5px 110px; color:#FFF; display:inline; font-size:12px; }
+#login ul li.login{margin:0 0 0 110px;}
+#login ul li.login input{margin-bottom:5px;}
+#login ul li input{margin:5px 0 10px 0; border:2px solid #e3e9ef; border-top:#999 2px solid; }
+#login p{float:left; width:325px; font-size:12px; text-align:right; color:#FFF; padding-right:20px; display:inline;}
+#login a{color:#FFF;}
+#login a.login{float:left; background:#45193c; padding:7px 5px; margin:0 0 0 110px; }
+#login p.login {width:380px; text-align:left; padding:35px 0 0 20px; background:url(../images/icn-prancheta.png) left bottom no-repeat; margin-left:30px; color:#45193c;}
+#login p.login a{color:#45193c;}
+#boxTeste{height:50px; background:#666; float:left; width:400px;}
+#boxTeste ul li a{float:left;}
+
+
+/*------------------------------box inferior------------------------*/ 
+#boxInferior{ background:url(../images/bg-box-inferior.png) top center no-repeat; width:916px; height:auto; margin-top:7px; float:left;}
+#boxInfEsq, #boxInfDir{width:415px; height:auto; float:left;  padding:10px 15px 15px 20px;}
+#boxInfEsq h1, #boxInfDir h1{font-size:14px; color:#565656; font-weight:bold; float:left; padding:8px 0 15px 0;}
+#boxInfEsq p, #boxInfDir p{float:left; font-size:13px; background:url(../images/icn-cartolla-dois.png) bottom left no-repeat; padding:0 0 0 20px; width:300px;}
+
+#boxInfDir{float:right; padding:10px 25px 0 15px;}
+#boxInfEsq ul, #boxInfDir ul { width:426px; float:left; height:auto; padding-bottom:5px;}
+#boxInfEsq li, #boxInfDir li{float:left; height:20px; padding:190px 2px 0 0; font-size:11px; background:url(../images/graf-700-799.png) top center no-repeat; width:104px; text-align:center;}
+
+
+
+
+
+#boxInfEsq li.graficoUmB{ background:url(../images/graf-700-799-b.png) top center no-repeat;}
+#boxInfEsq li.graficoDois{ background:url(../images/graf-800-899.png) top center no-repeat;}
+#boxInfEsq li.graficoDoisB{ background:url(../images/graf-800-899-b.png) top center no-repeat;}
+#boxInfEsq li.graficoTres{ background:url(../images/graf-900-999.png) top center no-repeat;}
+#boxInfEsq li.graficoTresB{ background:url(../images/graf-900-999-b.png) top center no-repeat;}
+#boxInfEsq li.graficoQuatro{ background:url(../images/graf-1000-1999.png) top center no-repeat;}
+#boxInfDir li.graficoCinco{background:url(../images/graf-lcd-700-799.png) top center no-repeat;}
+#boxInfDir li.graficoSeis{background:url(../images/graf-lcd-800-899.png) top center no-repeat;}
+#boxInfDir li.graficoSete{background:url(../images/graf-lcd-900-999.png) top center no-repeat;}
+#boxInfDir li.graficoOito{background:url(../images/graf-lcd-1000-1099.png) top center no-repeat;}
+
+
+
+a.ofertar{width:86px; height:27px; background:url(../images/bg-bt-oferta.png) top center no-repeat; float:right; color:#dedede; padding:4px 0 0 30px; font-size:14px;}
+
+/*------------------------------box inferior - pagina ofertando------------------------*/ 
+
+.ofertando#boxInferior{ background:url(../images/bg-box-inferior-b.png) top center no-repeat; padding-bottom:10px;}
+.ofertando#boxInfEsq {width:505px; padding-bottom:15px;}
+.ofertando#boxInfEsq h1{width:auto; font-size:13px; padding-top:0;}
+
+.ofertando#boxInfDir{width:335px; }
+.ofertando#boxInfDir ul{width:315px; float:right; padding-top:0;}
+.ofertando#boxInfDir li{ width:285px; height:30px; padding:10px 30px 5px 15px; background:url(../images/bg-li-ofertando.png) top left no-repeat; text-align:left;float:left;}
+.ofertando#boxInfDir li p{float:left; width:auto; background:none; padding:0; font-size:12px; }
+.ofertando#boxInfDir li label{float:right;}
+.ofertando#boxInfDir li input{ margin:0 10px 0 0; padding:0; background:none; color:#FFF;}
+a.voltar{width:43px; height:10px; background:url(../images/icn-voltar.png) left center no-repeat; float:right; color:#45193c; padding:3px 0 10px 23px; margin:5px 10px 10px; font-size:13px; }
+.ofertando#boxInfDir li.site{background:url(../images/bg-li-site-ofer.png) top left no-repeat; padding-bottom:0;}
+.ofertando#boxInfDir li.und{background:url(../images/bg-li-ofer-und.png) top left no-repeat;}
+.ofertando#boxInfDir li.und input{margin:0 75px 0 0}
+a.salvar{width:106px; height:33px; background:url(../images/bg-a-conf-ofer.png) left center no-repeat; float:right; color:#FFF; padding:10px 0 10px 0px; text-align:center; font-size:12px;}
+
+
+
+/*------------------------------box inferior - pagina confirmação------------------------*/ 
+.confirmacao#boxInferior{ background:url(../images/bg-box-inf-conf.png) top center no-repeat; height:370px;}
+
+#confirmacao{float:left; width:876px; height:55px; border-top:2px #999 solid; margin:5px 0 0 20px; }
+#confirmacao p{font-size:12px; padding:10px 0 0 0; line-height:150%; width:680px; float:left;}
+#confirmacao a.confirmacao{ background:url(../images/bg-a-conf-final.png) top center no-repeat; width:167px; height:41px; float:right; font-size:11px; text-align:center; margin:7px 0 0 0; padding:6px 0 0 0; color:#FFF;}
+/*------------------------------rodape------------------------*/ 
+
+#telaRodape{}
+#rodape{ height:30px; padding:15px 0 0 0; }
+#rodape p{float:left; padding:5px 0 0 0; color:#FFF;}
+#midias{float:right; width:auto; padding:0; height:30px;}
+#midias li{float:right; padding:0 5px 0;}

@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  autocomplete :product, :name, :full => true
   # GET /products
   # GET /products.json
   def index

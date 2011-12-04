@@ -1,0 +1,38 @@
+fieldset#wish {
+  margin-top: 26px;
+  margin-left: 186px;
+}
+
+input#wish_item {
+  background:url(../images/bg_menu.png) top center no-repeat;
+  height: 39px;
+  width: 192px;
+  color: #FFF;
+  font-size:19px;
+}
+
+label#wish_price_lbl {
+  background: url(../images/bg_menu-bt-preco.png) top left no-repeat;
+  padding: 12px 58px 11px 10px;
+  height: 39px;
+  width: 192px;
+  font-size: 13px;
+  color: #FFF;
+}
+input#wish_price {
+  width: 48px;
+  margin-left: -62px;
+  margin-right: 9px;
+  background-color: #FFF;
+  color: #000;
+  font-size:14px;
+}
+
+input.btEnviar{
+  background:url(../images/bg_bt_enviar.png) top center no-repeat;
+  width:105px;
+  height:41px;
+  padding:10px 20px 10px 0px;
+  color: #FFF;
+  font-size:19px;
+}

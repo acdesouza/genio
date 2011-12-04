@@ -2,3 +2,19 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+/*
+.ui-autocomplete .ui-menu ui-widget .ui-widget-content .ui-corner-all
+*/
+.ui-widget-content {
+  width: 522px; /* Não é usado */
+  height: 263px;
+  background:url(../images/fundo.png) right center no-repeat;
+  background-position: -2px 0px;
+  padding-top: 21px;
+  padding-left: 16px;
+}
+/*
+.li.ui-menu-item
+.ui-corner-all
+*/
+.ui-state-hover { color: red; }

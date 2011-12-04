@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+
+  helpers:
+    label:
+      wish:
+        price: "Coloque seu preço R$"

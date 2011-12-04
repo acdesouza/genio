@@ -13,6 +13,7 @@ gem 'devise'
 #end
 
 gem 'jquery-rails'
+gem 'rails3-jquery-autocomplete'
 
 group :development, :test do
   # To use debugger

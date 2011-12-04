@@ -1,8 +1,8 @@
 <%= action_title 'Faça um desejo' %>
-<fieldset>
-  <legend>Seu desejo</legend>
+<fieldset id="wish">
   <%= form_for @wish do |f| %>
-    <%= f.text_field :item %>
+    <%= f.autocomplete_field :item, autocomplete_product_name_products_path %>
+    <%= f.label :price, id: 'wish_price_lbl' %>
     <%= f.text_field :price, class: 'btPreco' %>
     <%= f.submit 'Enviar', class: 'btEnviar' %>
   <% end %>

@@ -19,7 +19,11 @@
           <ul>
             <li class="cadastro"><a href="#">Cadastro</a></li>
             <li class="lista"><a href="#">Minha lista de desejos</a></li>
-            <li class="login"><a href="#">Login</a></li>
+            <% if user_signed_in? %>
+              <li class="login"><%= link_to current_user.email, users_sign_out_path, :method => :delete %>
+            <% else %>
+              <li class="login"><a href="<%= root_path %>">Login</a></li>
+            <% end %>
           </ul>
         </div>
         <div id="banner"><%= image_tag "/images/banner-cartolla.png", width: "794", height: "175" %></div>

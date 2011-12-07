@@ -17,11 +17,11 @@
         <div id="marca"><a href="#" title="Cartolla" alt="marca cartolla"><%= image_tag "/images/marca-cartolla.png", border: "0" %></a></div>
         <div id="usuario">
           <ul>
-            <li class="cadastro"><a href="#">Cadastro</a></li>
-            <li class="lista"><a href="#">Minha lista de desejos</a></li>
             <% if user_signed_in? %>
-              <li class="login"><%= link_to current_user.email, users_sign_out_path, :method => :delete %>
+              <li class="lista"><a href="#">Minha lista de desejos</a></li>
+              <li class="login"><%= link_to current_user.email, users_sign_out_path, :method => :delete %></li>
             <% else %>
+              <li class="cadastro"><a href="#">Cadastro</a></li>
               <li class="login"><a href="<%= root_path %>">Login</a></li>
             <% end %>
           </ul>

@@ -2,11 +2,17 @@
   You are signed in as <%= current_user.email %>. <%= link_to "Sign out", users_sign_out_path, :method => :delete %>.
 <% else %>
   <%= form_for @user, :url => users_sign_in_path do |f| %>
-    <div><%= f.label :email %><br />
-      <%= f.email_field :email %></div>
-    <div><%= f.label :password %><br />
-      <%= f.password_field :password %></div>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-    <div><%= f.submit "Sign in" %></div>
+    <div id="login">
+      <h1>Para entrar efetue o login</h1>
+      <ul>
+        <li><%= f.label :email, class: 'rotulo' %><br />
+        <%= f.email_field :email, size: '30', maxlength: '40' %></li>
+        <li class="login"><%= f.label :password %><br />
+        <%= f.password_field :password, size: '30', maxlength: '40' %></li>
+      </ul>
+      <p><a href="#">Esqueci minha senha</a></p>
+      <%= f.submit "Entrar", class: 'login', id: 'entrar' %>
+      <p class="login">Caso ainda não seja um parceiro do Cartolla <a href="#">clique aqui!</a></p>
+    </div>
   <% end %>
 <% end %>

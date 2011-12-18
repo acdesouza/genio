@@ -19,9 +19,9 @@
           <ul>
             <% if user_signed_in? %>
               <li class="lista"><a href="#">Minha lista de desejos</a></li>
-              <li class="login"><%= link_to current_user.email, users_sign_out_path, :method => :delete %></li>
+              <li class="login"><%= link_to current_user.email, destroy_user_session_path, :method => :delete %></li>
             <% else %>
-              <li class="cadastro"><a href="#">Cadastro</a></li>
+              <li class="cadastro"><a href="<%= new_user_registration_path %>">Cadastro</a></li>
               <li class="login"><a href="<%= root_path %>">Login</a></li>
             <% end %>
           </ul>

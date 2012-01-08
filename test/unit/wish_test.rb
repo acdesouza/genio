@@ -2,8 +2,8 @@
 require 'test_helper'
 
 class WishTest < ActiveSupport::TestCase
-  test 'should create a wish with an item and a price' do
-    saved_wish = Wish.create item: 'Televisão', price: 500
+  test 'should create a wish with an item and a price for a User' do
+    saved_wish = Wish.create item: 'Televisão', price: 500, user: users(:everton)
 
     refute_nil saved_wish
     assert_present saved_wish.item
@@ -21,6 +21,14 @@ class WishTest < ActiveSupport::TestCase
 
     refute wish.valid?
   end
+
+  test 'should not create wish without an User' do
+    wish = Wish.create price: 500, item: 'Televisão'
+
+    refute wish.valid?
+  end
+
+
 
   test 'should group and count wishes' do
     counted_wishes = Wish.grouped

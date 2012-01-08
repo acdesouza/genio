@@ -1,8 +1,7 @@
 class Wish < ActiveRecord::Base
-  validates :item,
-      presence: true
-  validates :price,
-      presence: true
+  belongs_to :user
+
+  validates :item, :price, :user, presence: true
 
   def self.grouped
     count(:all, group: 'item', order: 'count_all DESC, item ASC')

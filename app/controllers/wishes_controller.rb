@@ -7,6 +7,9 @@ class WishesController < ApplicationController
 
   def create
     @wish = Wish.new params[:wish]
+    @wish.user = current_user
+
+
     if @wish.save
       redirect_to :action => 'index'
     else

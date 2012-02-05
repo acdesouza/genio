@@ -9,5 +9,6 @@ Cartolla::Application.routes.draw do
   end
 
   resources :wishes
+  resources :bids
   root :to => 'wishes#new'
 end

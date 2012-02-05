@@ -1,0 +1,14 @@
+<%= action_title "Fazer uma oferta" %>
+<fieldset id="bid">
+  <%= form_for @bid do |f| %>
+    <%= f.label :qtd, id: 'bid_qtd_lbl' %>
+    <%= f.text_field :qtd %><br />
+    <%= f.label :due_to, id: 'bid_due_to_lbl' %>
+    <%= f.text_field :due_to %><br />
+    <%= f.label :price, id: 'bid_price_lbl' %>
+    <%= f.text_field :price %><br />
+    <%= f.label :url, id: 'bid_url_lbl' %>
+    <%= f.text_field :url %><br />
+    <%= f.submit 'Enviar', class: 'btEnviar' %>
+  <% end %>
+</fieldset>

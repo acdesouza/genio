@@ -1,0 +1,11 @@
+fieldset#bid label {
+  width: 55px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  display: block
+}
+
+fieldset#bid br {
+  clear: right;
+}

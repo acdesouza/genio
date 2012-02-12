@@ -5,6 +5,7 @@ class BidsController < ApplicationController
 
   def create
     @bid = Bid.new params[:bid]
+    @bid.user = current_user
 
     if @bid.save
       redirect_to wishes_path

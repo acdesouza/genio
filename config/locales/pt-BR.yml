@@ -2,6 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 pt-BR:
+  errors:
+    messages:
+      blank: não pode ficar em branco
   helpers:
     label:
       wish:

@@ -14,4 +14,11 @@ class BidTest < ActiveSupport::TestCase
     assert_present saved_bid.url
     assert_present saved_bid.user
   end
+
+  test 'should not create a bid without a user.' do
+      saved_bid = Bid.create  :price  => 100, :due_to => Time.now,
+                              :qtd    =>  10, :url    => 'http://submarino.com/produtcts/10?vendor=cartolla'
+
+      assert_equal({:user=>["não pode ficar em branco"]}, saved_bid.errors.messages)
+  end
 end

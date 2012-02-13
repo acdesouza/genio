@@ -9,6 +9,7 @@ class BidsController < ApplicationController
   def create
     @bid = Bid.new params[:bid]
     @bid.user = current_user
+    @bid.product = Product.find_by_name params[:product_name]
 
     if @bid.save
       redirect_to wishes_path

@@ -39,11 +39,16 @@ class BidsControllerTest < ActionController::TestCase
         end
       end
     end
+
+    assert_select 'input#product_name[type=hidden]', :attributes => {:value => wish_description}
   end
 
   test "should create a bid" do
     assert_difference('Bid.count') do
-      post :create, :bid => { price: 100, due_to: Time.now, qtd: 10, url: 'http://ofertador.com/produto/10?parceiro=cartolla' }
+      post :create, :bid => { price: 100, due_to: Time.now, 
+                              qtd: 10, url: 'http://ofertador.com/produto/10?parceiro=cartolla', 
+                               },
+                    :product_name => products(:PS3).name 
       assert_redirected_to wishes_path
     end
   end

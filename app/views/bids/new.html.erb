@@ -26,6 +26,7 @@
 
 <fieldset id="bid">
   <%= form_for @bid do |f| %>
+    <input type="hidden" id="product_name" name="product_name" value ="<%= @wish_description %>" />
     <%= f.label :qtd, id: 'bid_qtd_lbl' %>
     <%= f.text_field :qtd %><br />
     <%= f.label :due_to, id: 'bid_due_to_lbl' %>

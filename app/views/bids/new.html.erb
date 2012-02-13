@@ -1,4 +1,29 @@
-<%= action_title "Fazer uma oferta" %>
+<%= action_title "Fazer uma oferta para os desejos do produto: #{@wish_description}" %>
+<%= link_to 'Voltar a lista de desejos', wishes_path %>
+<table id="wishes">
+  <thead>
+    <tr>
+      <th colspan="5">Intervalos de valores</th>
+    </tr>
+    <tr>
+      <th><%= @wishes_group.intervals[0] %></th>
+      <th><%= @wishes_group.intervals[1] %></th>
+      <th><%= @wishes_group.intervals[2] %></th>
+      <th><%= @wishes_group.intervals[3] %></th>
+      <th><%= @wishes_group.intervals[4] %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @wishes_group.frequencies[0] %></td>
+      <td><%= @wishes_group.frequencies[1] %></td>
+      <td><%= @wishes_group.frequencies[2] %></td>
+      <td><%= @wishes_group.frequencies[3] %></td>
+      <td><%= @wishes_group.frequencies[4] %></td>
+    </tr>
+  </tbody>
+</table>
+
 <fieldset id="bid">
   <%= form_for @bid do |f| %>
     <%= f.label :qtd, id: 'bid_qtd_lbl' %>

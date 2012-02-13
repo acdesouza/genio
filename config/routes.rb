@@ -9,6 +9,9 @@ Cartolla::Application.routes.draw do
   end
 
   resources :wishes
-  resources :bids
+
+  get   'wishes/:wish_id/bids/new'  => 'bids#new', :as => 'make_a_bid_for_wish'
+  post  'bids'                      => 'bids#create'
+
   root :to => 'wishes#new'
 end

@@ -1,3 +1,7 @@
+fieldset#bid {
+  float: right;
+}
+
 fieldset#bid label {
   width: 55px;
   float: left;

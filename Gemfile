@@ -19,6 +19,7 @@ group :development, :test do
   # To use debugger
   # gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'minitest'
+  gem 'mocha'
   # Pretty printed test output
   # gem 'turn', :require => false # Don't work with autotest
   gem 'ZenTest'

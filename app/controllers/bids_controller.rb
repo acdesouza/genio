@@ -1,5 +1,8 @@
 class BidsController < ApplicationController
   def new
+    @wish_description = params[:wish_id]
+    @wishes_group = WishesGroup.new @wish_description
+
     @bid = Bid.new
   end
 

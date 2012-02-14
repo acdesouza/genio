@@ -18,6 +18,10 @@ class Wish < ActiveRecord::Base
     return prices_interval
   end
 
+  def self.find_by_user(user)
+    Wish.find_all_by_user_id user.id
+  end
+
  private
   def self.price_interval_range(wish_description)
     top_price = where(item: wish_description).maximum('price')

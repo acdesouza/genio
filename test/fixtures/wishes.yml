@@ -3,6 +3,7 @@
 televisao_1:
   item: Samsung LCD 55" FullHD
   price: 1000
+  user_id: 1
 
 televisao_2:
   item: Samsung LCD 55" FullHD
@@ -35,6 +36,7 @@ xbox_05:
 ps3_01:
   item: PS3
   price: 1100
+  user_id: 1
 ps3_01_1:
   item: PS3
   price: 1101

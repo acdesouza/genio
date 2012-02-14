@@ -47,4 +47,9 @@ class WishTest < ActiveSupport::TestCase
     assert_equal [ 118,  126,  134,  142,  150], Wish.find_prices_interval_for_wish('XBox 360')
     assert_equal [1180, 1260, 1340, 1420, 1500], Wish.find_prices_interval_for_wish('PS3')
   end
+
+  test 'should return wishes filtered by user' do
+    user_wishes = Wish.find_by_user users(:acdesouza)
+    assert_equal [wishes(:televisao_1), wishes(:ps3_01)], user_wishes
+  end
 end

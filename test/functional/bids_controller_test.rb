@@ -15,7 +15,7 @@ class BidsControllerTest < ActionController::TestCase
     get :new, :wish_id => wish_description
     assert_response :success
 
-    assert_select 'title', "Cartolla | Fazer uma oferta para os desejos do produto: #{wish_description}"
+    assert_select 'title', "Fazer uma oferta para os desejos do produto: #{wish_description} | Cartolla"
 
     assert_select 'table#wishes' do |table|
       assert_select 'thead' do

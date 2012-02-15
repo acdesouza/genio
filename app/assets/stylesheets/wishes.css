@@ -39,9 +39,10 @@ input#wish_price {
   width: 48px;
   margin-left: -62px;
   margin-right: 9px;
-  background-color: #FFF;
-  color: #000;
+  background-color: #4D123A;
+  color: #FFFFFF;
   font-size:14px;
+  text-align: right;
 }
 
 input.btEnviar{

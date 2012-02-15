@@ -21,7 +21,7 @@ body{ background:url(../images/bg-body.png) top left repeat-x #747378;}
 #info li.contato{ background:url(../images/icn-carta.png) left center no-repeat; padding:5px 0 7px 20px;}
 #info li a{padding:0px;}
 #marca{float:left; padding:5px 0 0 268px; }
-#usuario{float:right; width:180px; height:auto; font-size:13px; text-align:right; padding:0 0 5px;}
+#usuario{float:right; width:330px; height:auto; font-size:13px; text-align:right; padding:0 0 5px;}
 #usuario li{padding:5px 25px 0 0;}
 #usuario li.cadastro{ background:url(../images/icn-prancheta.png) right center no-repeat;}
 #usuario li.lista{ background:url(../images/icn-pasta.png) right center no-repeat;}

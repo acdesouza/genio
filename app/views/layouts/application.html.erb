@@ -18,7 +18,7 @@
         <div id="usuario">
           <ul>
             <% if user_signed_in? %>
-              <li class="lista"><a href="#">Minha lista de desejos</a></li>
+              <li class="lista"><%= link_to 'Minha lista de desejos', user_wishes_path(current_user.id) %></li>
               <li class="login"><%= link_to current_user.email, destroy_user_session_path, :method => :delete %></li>
             <% else %>
               <li class="cadastro"><a href="<%= new_user_registration_path %>">Cadastro</a></li>

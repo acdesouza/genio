@@ -43,6 +43,30 @@ class WishesControllerTest < ActionController::TestCase
     end
   end
 
+  test 'should show only my wishes' do
+    sign_in users(:acdesouza)
+    get 'user', :id => users(:acdesouza).id
+    assert_response :success
+
+    assert_select 'table#wishes' do
+      assert_select 'thead' do
+        assert_select 'th', 2
+      end
+
+      assert_select 'tbody' do |tbody|
+        assert_select 'tr', 2
+
+        tds_item = css_select 'tr td.item'
+        assert_select tds_item[0], 'td', CGI.escapeHTML(wishes(:televisao_1).item)
+        assert_select tds_item[1], 'td', wishes(:ps3_01).item
+
+        tds_price = css_select 'tr td.price'
+        assert_select tds_price[0], 'td', wishes(:televisao_1).price.to_s
+        assert_select tds_price[1], 'td', wishes(:ps3_01).price.to_s
+      end
+    end
+  end
+
   test 'should create a wish' do
     assert_difference('Wish.count') do
       post :create, :wish => { item: 'Televisão', price: 500 }

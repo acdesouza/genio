@@ -1,5 +1,7 @@
 Cartolla::Application.routes.draw do
   devise_for :users#, :skip => :all
+  
+  get 'users/:id/wishes' => 'wishes#user', :as => 'user_wishes'
   #root :to => "sessions#new"
   #post "/users/sign_in"    => "sessions#create"
   #delete "/users/sign_out" => "sessions#destroy"

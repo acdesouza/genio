@@ -20,4 +20,8 @@ class WishesController < ApplicationController
   def index
     @wishes = Wish.grouped
   end
+
+  def user
+    @wishes = Wish.find_by_user current_user
+  end
 end

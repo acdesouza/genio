@@ -21,8 +21,8 @@
               <li class="lista"><%= link_to 'Minha lista de desejos', user_wishes_path(current_user.id) %></li>
               <li class="login"><%= link_to current_user.email, destroy_user_session_path, :method => :delete %></li>
             <% else %>
-              <li class="cadastro"><a href="<%= new_user_registration_path %>">Cadastro</a></li>
-              <li class="login"><a href="<%= root_path %>">Login</a></li>
+              <li class="cadastro"><%= link_to 'Cadastro', new_user_registration_path %></li>
+              <li class="login"><%= link_to 'Login', root_path %></li>
             <% end %>
           </ul>
         </div>

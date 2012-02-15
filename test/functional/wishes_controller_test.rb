@@ -70,7 +70,7 @@ class WishesControllerTest < ActionController::TestCase
   test 'should create a wish' do
     assert_difference('Wish.count') do
       post :create, :wish => { item: 'Televisão', price: 500 }
-      assert_redirected_to wishes_path
+      assert_redirected_to user_wishes_path(users(:everton).id)
     end
 
   end

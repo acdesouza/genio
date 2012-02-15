@@ -11,7 +11,7 @@ class WishesController < ApplicationController
 
 
     if @wish.save
-      redirect_to :action => 'index'
+      redirect_to user_wishes_path(current_user.id)
     else
       render action: 'new'
     end
@@ -22,6 +22,7 @@ class WishesController < ApplicationController
   end
 
   def user
+    #FIXME Não tem como isso estar certo. Eu tenho q passar um usuário q vai ser ignorado
     @wishes = Wish.find_by_user current_user
   end
 end

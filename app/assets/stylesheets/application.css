@@ -37,3 +37,10 @@ body{ background:url(../images/bg-body.png) top left repeat-x #747378;}
 #rodape p{float:left; padding:5px 0 0 0; color:#FFF;}
 #midias{float:right; width:auto; padding:0; height:30px;}
 #midias li{float:right; padding:0 5px 0;}
+
+
+div#flash_alert {
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: -13px;
+}

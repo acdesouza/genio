@@ -1,12 +1,46 @@
-/*------------------------------pagina de login------------------------*/
-#login{background:url(../images/bg_login.png) top center no-repeat; width:444px; height:310px; margin:0 auto;}
-#login h1{font-size:16px; padding:15px 0 0 110px; float:left; color:#FFF;}
-#login ul li{float:left; margin:25px 0 5px 110px; color:#FFF; display:inline; font-size:12px; }
-#login ul li.login{margin:0 0 0 110px;}
-#login ul li.login input{margin-bottom:5px;}
-#login ul li input{margin:5px 0 10px 0; border:2px solid #e3e9ef; border-top:#999 2px solid; }
-#login p{float:left; width:325px; font-size:12px; text-align:right; color:#FFF; padding-right:20px; display:inline;}
-#login a{color:#FFF;}
-#login input#entrar{float:left; background:#45193c; font-size:16px; color:#FFF; padding:7px 5px; margin:0 0 0 110px; }
-#login p.login {width:380px; text-align:left; padding:35px 0 0 20px; background:url(../images/icn-prancheta.png) left bottom no-repeat; margin-left:30px; color:#45193c;}
-#login p.login a{color:#45193c;}
+div#login {
+  background: url(../images/bg_login.png)
+              top center no-repeat;
+  width: 373px;
+  height: 231px;
+  margin-left: 286px;
+  margin-top: 26px;
+  margin-bottom: -80px;
+}
+
+#login h2{
+  font-size: 16px;
+  color: white;
+
+  padding-top: 17px;
+  margin-left: 69px;
+  padding-bottom: 10px;
+}
+
+#login fieldset {
+  margin-left: 74px;
+}
+
+#login label {
+  font-size: 12px;
+  color: white;
+}
+
+#login input {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+a#forget_password {
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-left: 68px;
+}
+
+input#sign_in {
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #45193C;
+  padding: 7px 5px;
+}
+

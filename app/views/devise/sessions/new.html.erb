@@ -1,0 +1,17 @@
+<div id="login">
+  <h2>Para entrar efetue o login</h2>
+
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <fieldset id="login">
+      <p><%= f.label :email %><br />
+        <%= f.email_field :email %></p>
+
+      <p><%= f.label :password %><br />
+      <%= f.password_field :password %></p>
+
+      <p ><%= link_to "Esqueci minha senha", new_password_path(resource_name), :id => 'forget_password' %></p>
+
+      <p><%= f.submit "Entrar", :id => 'sign_in' %></p>
+    </fieldset>
+  <% end %>
+</div>

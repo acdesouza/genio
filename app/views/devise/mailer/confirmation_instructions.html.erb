@@ -1,5 +1,9 @@
-<p>Welcome <%= @resource.email %>!</p>
+Bem vindo ao Cartolla!
+Por favor clique no link abaixo para confirmar seu cadastro.
+<p><%= link_to 'Link de confirmação', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
 
-<p>You can confirm your account through the link below:</p>
+No Cartolla, você manda seus desejos, e torce para que uma loja online os atenda. Estamos na torcida com você!
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+Até mais,
+Equipe Cartolla
+www.cartolla.com.br

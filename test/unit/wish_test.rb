@@ -52,4 +52,9 @@ class WishTest < ActiveSupport::TestCase
     user_wishes = Wish.find_by_user users(:acdesouza)
     assert_equal [wishes(:televisao_1), wishes(:ps3_01)], user_wishes
   end
+
+  test 'should return user which wishes is inside especified range' do
+    users = Wish.target_users_in_price_range('Samsung LCD 55" FullHD', 1000, 1099)
+    assert_equal [users(:acdesouza)], users
+  end
 end

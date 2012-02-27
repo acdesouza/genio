@@ -5,7 +5,7 @@ class BidTest < ActiveSupport::TestCase
   test 'should create a bid which grants wishes.' do
     saved_bid = Bid.create  :price    => 100, :due_to => Time.now,
                             :qtd      =>  10, :url    => 'http://submarino.com/produtcts/10?vendor=cartolla',
-                            :user     => users(:everton), 
+                            :user     => users(:everton),
                             :product  => products(:PS3)
 
     refute_nil saved_bid
@@ -31,5 +31,14 @@ class BidTest < ActiveSupport::TestCase
                               :user     => users(:everton)
 
       assert_equal({:product=>["não pode ficar em branco"]}, saved_bid.errors.messages)
+  end
+
+  test 'should calculate bid\'s price range' do
+    bid = Bid.create  :price  => 100, :due_to => Time.now,
+                      :qtd    =>  10, :url    => 'http://submarino.com/produtcts/10?vendor=cartolla',
+                      :user     => users(:everton)
+
+    assert_equal  90, bid.price_range[0]
+    assert_equal 110, bid.price_range[1]
   end
 end

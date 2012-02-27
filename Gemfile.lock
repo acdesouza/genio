@@ -38,6 +38,11 @@ GEM
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     columnize (0.3.6)
+    delayed_job (3.0.1)
+      activesupport (~> 3.0)
+    delayed_job_active_record (0.3.2)
+      activerecord (> 2.1.0)
+      delayed_job (~> 3.0.0)
     devise (1.5.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -139,6 +144,7 @@ PLATFORMS
 DEPENDENCIES
   ZenTest
   autotest-rails
+  delayed_job_active_record
   devise
   heroku
   jquery-rails

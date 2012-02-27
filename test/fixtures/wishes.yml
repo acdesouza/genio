@@ -8,10 +8,16 @@ televisao_1:
 televisao_2:
   item: Samsung LCD 55" FullHD
   price: 1100
+  user_id: 2
 
 bluray:
   item: Samsung BluRay Player
   price: 300
+
+bluray:
+  item: Samsung BluRay Player
+  price: 1010
+  user_id: 2
 
 xbox_01:
   item: XBox 360

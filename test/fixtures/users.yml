@@ -2,6 +2,7 @@
 <% enc_pass = User.new.password_digest '123456' %>
 
 everton:
+  id: 2
   email: everton.carpes@gmail.com
   encrypted_password: <%= enc_pass %>
   sign_in_count: 3

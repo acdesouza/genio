@@ -22,6 +22,13 @@ class Wish < ActiveRecord::Base
     Wish.find_all_by_user_id user.id
   end
 
+  def self.target_users_in_price_range(item, price_min, price_max)
+    wishes = Wish.includes(:user).where(item: item, price: price_min..price_max)
+    wishes.collect do |wish|
+      wish.user
+    end
+  end
+
  private
   def self.price_interval_range(wish_description)
     top_price = where(item: wish_description).maximum('price')

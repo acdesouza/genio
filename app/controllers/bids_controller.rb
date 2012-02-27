@@ -12,6 +12,11 @@ class BidsController < ApplicationController
     @bid.product = Product.find_by_name params[:product_name]
 
     if @bid.save
+      #FIXME O mailer deveria receber uma lista de usuários, não ficar procurando para quem mandar
+      price_min, price_max = @bid.price_range
+      users = Wish.target_users_in_price_range(@bid.product.name, price_min, price_max)
+
+      BidMailer.delay.bid_created(@bid, users)
       redirect_to wishes_path
     end
   end

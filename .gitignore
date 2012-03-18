@@ -2,6 +2,7 @@
 db/*.sqlite3
 .bundle
 .rvmrc
+bin/
 log/
 tmp/
 .sass-cache/
